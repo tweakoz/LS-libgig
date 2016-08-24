@@ -3,7 +3,7 @@ all:	configure
 configure:	configure.ac Makefile.am \
 		src/Makefile.am man/Makefile.am doc/Makefile.am
 	@aclocal
-	@libtoolize --force --copy
+	@glibtoolize --force --copy
 	@autoheader
 	@automake --add-missing --copy
 	@autoconf
